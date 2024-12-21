@@ -17,5 +17,11 @@ public class WebcamSetupEditor : Editor
                 }
             }
         }
+
+        EditorGUILayout.Space();
+
+        if(GUILayout.Button("Next Device")) {
+            current.NextDevice();
+        }
     }
 }
